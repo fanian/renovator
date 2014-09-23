@@ -445,6 +445,102 @@ header
         font-size: 14px
         color: #eeddc6
 
+
+.tech
+  background: url(../img/tech_bg.jpg) center center no-repeat
+  +background-size(cover)
+  height: 983px
+  +clr
+
+  .tech_in
+    @extend %in
+    +clr
+  .tech__top
+    padding-top: 55px
+    float: left
+  .tech__title
+    color: #ffffff
+    text-transform: uppercase
+    +arimob
+    font-size: 22px
+    +text-shadow(0 2px 2px black)
+
+  .tech--half
+    width: 494px
+    float: left
+    margin-right: 10px
+    &:last-child
+      margin-right: 0
+  .tech__list
+    margin-top: 30px
+    li
+      padding-left: 25px
+      position: relative
+      margin-bottom: 6px
+
+      +arial
+      font-size: 15px
+      color: #ffffff
+      &:before
+        position: absolute
+        content: ""
+        top: 6px
+        left: 0
+        width: 8px
+        height: 8px
+        +border-radius(50%)
+        background: rgb(251,186,46)
+  .tech--yellow
+    font-size: 16px
+    color: #fbba2e
+    +osl
+    margin-top: 35px
+  &__accessories
+    +clr
+    padding-top: 45px
+    clear: both
+    h2
+      font-size: 32px
+      color: white
+    .acc__img
+      margin-top: 70px
+      float: left
+      width: 459px
+      height: 387px
+      img
+        display: block
+    .acc__text
+      float: left
+      margin-left: 50px
+      width: 485px
+      h4
+        margin-top: 10px
+        +osl
+        font-size: 13px
+        color: #929292
+  .tech--grey
+    color: #929292
+    margin-top: 64px
+  .tech__list--other
+    margin-top: 20px
+    li
+      padding-left: 30px
+      margin-bottom: 4px
+      &:before
+        top: 3px
+        +s(list_ico)
+
+
+
+
+
+
+
+
+
+
+
+
 .bottom
 
 footer
