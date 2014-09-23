@@ -283,6 +283,113 @@ header
         float: left
         margin-right: 20px
 
+.attention
+  background: url(../img/attention_bg.png) center center no-repeat
+  +background-size(cover)
+  height: 419px
+  text-align: center
+  padding-top: 60px
+  +box
+  .attention_in
+    @extend %in
+    h2
+      color: #ffffff
+      font-size: 32px
+    h3
+      +osl
+      font-size: 18px
+      color: #ffffff
+      margin-top: 10px
+      margin-bottom: 35px
+    h4
+      +arial
+      font-size: 14px
+      color: #fbf4e5
+      &.yellow
+        margin-top: 14px
+        color: #ffd466
+
+.manual
+  padding-top: 50px
+
+  .manual_in
+    @extend %in
+    border-bottom: solid 1px rgb(229,200,291)
+    padding-bottom: 50px
+    +clr
+  h2
+    color: #373f49
+    font-size: 32px
+  h3
+    font-family: 'opensanssemiboldregular'
+    font-size: 20px
+    font-weight: normal
+    color: #373f49
+    text-align: center
+    line-height: 1em
+    margin-top: -3px
+    margin-bottom: 30px
+  p
+    text-align: center
+    +arial
+    font-size: 14px
+    color: #7f7f7f
+    margin-bottom: 25px
+  .manual-block
+    width: 428px
+    height: 128px
+    text-align: center
+    margin: 0 auto
+    background: rgb(244,237,231)
+    +border-radius(3px)
+    .button__out--download
+      top: 50%
+      +transform(translateY(-50%))
+      width: 346px
+      .button--download
+        width: 356px
+        position: relative
+        padding-left: 32px
+        text-transform: none
+        font-family: 'opensanssemiboldregular'
+        font-size: 24px
+        padding-top: 16px
+
+        .page_ico
+          position: absolute
+          content: ""
+          top: 17px
+          left: 33px
+          +s(page_ico)
+
+.also
+  .also_in
+    @extend %in
+  h2
+    color: #373f49
+    padding: 40px 0
+  .also__item
+    vertical-align: top
+    width: 315px
+    text-align: center
+    display: inline-block
+    margin-right: 22px
+    &:last-child
+      margin-right: 0
+    .also__img
+      display: inline-block
+      width: 313px
+      height: 276px
+      img
+        +border-radius(5px)
+        display: block
+        border: solid #ccc 1px
+    p
+      font-size: 20px
+      color: #373f49
+      font-family: 'opensanssemiboldregular'
+      margin-top: 10px
+      line-height: 1.2em
 
 
 .reviews

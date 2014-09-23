@@ -108,7 +108,7 @@ input, textarea
 .title
   font-size: 32px
   color: #ffffff
-  +arimo
+  +arimob
   text-align: center
   text-transform: uppercase
 
@@ -197,25 +197,29 @@ input, textarea
   width: 254px
   +border-radius(3px)
   background: rgb(238,55,28)
+.button
+  text-align: center
+  position: relative
+  +box-shadow(0 2px 7px rgba(0,0,0,.72), inset 0 1px 0 rgba(255,255,255,.53))
+  +background(linear-gradient( rgb(255,110,59), rgb(255,76,41)))
+  height: 67px
+  top: 5px
+  left: -5px
+  width: 264px
+  font-size: 20px
+  text-transform: uppercase
+  font-family: 'opensanssemiboldregular'
+  color: #ffffff
+  +border-radius(2px)
+  +box
+  padding-top: 20px
+  &:hover
+    +background-image(linear-gradient(rgb(255,76,41),rgb(255,110,59)))
+  &:active
+    +box-shadow(0 0 0 0)
+.button__out--center
+  display: inline-block
 
-  .button
-    text-align: center
-    position: relative
-    +box-shadow(0 2px 7px rgba(0,0,0,.72), inset 0 1px 0 rgba(255,255,255,.53))
-    +background(linear-gradient( rgb(255,110,59), rgb(255,76,41)))
-    padding: 19px 0
-    top: 5px
-    left: -5px
-    width: 264px
-    font-size: 20px
-    text-transform: uppercase
-    font-family: 'opensanssemiboldregular'
-    color: #ffffff
-    +border-radius(2px)
-    &:hover
-      +background-image(linear-gradient(rgb(255,76,41),rgb(255,110,59)))
-    &:active
-      +box-shadow(0 0 0 0)
 
 
 
