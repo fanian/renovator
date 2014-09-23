@@ -189,7 +189,7 @@ $(document).ready(function(){
             $(".count_line .d").html(days);
             $(".count_line .h").html(hours);
             $(".count_line .m").html(minutes);
-            $(".count_line .s").html(seconds);
+        //    $(".count_line .s").html(seconds);
         }
         showRemaining();
         timer = setInterval(showRemaining, 1000);

@@ -13,6 +13,7 @@
   left: 0
   .top_in
     @extend %in
+    +clr
 
 
   nav
@@ -51,7 +52,7 @@
           display: block
           line-height: 50px
           height: 50px
-          padding: 0 30px
+          padding: 0 33px
         &.is-active
           background: rgba(#000, .18)
           color: #ffffff
@@ -80,6 +81,8 @@ header
 
   .header_title
     +clr
+    border-bottom: solid 1px rgba(#fff,.2)
+    padding-bottom: 20px
     .title_logo
       float: left
       color: #fafafa
@@ -109,77 +112,176 @@ header
       color: #ffffff
       margin-top: 55px
     .title_address
-      margin-top: 45px
+      margin-top: 35px
       float: right
       .title_phone
         position: relative
-        font-size: 24px
-        color: #fafafa
-        &:before
-          position: absolute
-          content: ""
-          top: 7px
-          left: -22px
-      .title_mail
+        font-size: 41px
+        color: #ffffff
+        +arimo
+        span
+          +arimob
+
+      .title_nomenclature
         display: block
         text-align: right
-        color: #ddbc72
-        font-size: 13px
-        margin-top: 5px
+        color: #818181
+        font-size: 15px
+        +arimo
   .header_main
-    margin-top: 70px
+    margin-top: 30px
     +clr
+    h1
+      color: #fcc435
+      font-size: 35px
+    h2
+      +osl
+      color: #ffffff
+      font-size: 24px
+      text-transform: uppercase
+      line-height: 1.3em
+      text-align: center
+      margin-bottom: 5px
     .header_left
+      position: relative
       float: left
-      width: 370px
-      text-align: right
-      margin-top: 35px
-      h1
-        +arimo
-        color: #cda449
-        font-size: 48px
-        text-transform: uppercase
-        line-height: 1.3em
-        margin-bottom: 20px
-      h2
-        +arimo
-        color: #fafafa
-        font-size: 30px
-        text-transform: uppercase
-        line-height: 1.3em
+      width: 613px
+      text-align: left
+      margin-top: 100px
+      z-index: 0
+      +clr
+      .header__price
+        position: absolute
+        content: ""
+        background: url(../img/price_bg.png) no-repeat
+        width: 206px
+        height: 118px
+        top: -56px
+        left: -15px
+        z-index: -1
+        .discount
+          position: relative
+          +arimo
+          font-size: 18px
+          color: #ffffff
+          margin-top: 20px
+          margin-left: 10px
+          display: inline-block
+          &:before
+            content: ''
+            position: absolute
+            top: 13px
+            left: 0
+            right: 0
+            height: 0
+            border-bottom: 1px solid
+        .price
+          +arimo
+          font-size: 23px
+          color: #ffffff
+          margin-left: 25px
+          margin-top: -15px
+          span
+            +arimob
+            font-size: 48px
+      .about
+        position: absolute
+        font-family: 'opensansregular'
+        font-size: 10px
+        color: #ffffff
+        width: 145px
+        top: 61px
+        left: -10px
+        &:after
+          height: 0
+          position: absolute
+          top: 61px
+          left: 84px
+          right: 6px
+          border-bottom: solid 1px
+          +transform(rotate(30deg))
+          content: ""
+      .about2
+        width: 250px
+        top: -35px
+        left: 215px
+        &:after
+          +transform(rotate(-20deg))
+          top: 45px
+          left: 81px
+          right: 85px
+      .about3
+        width: 70px
+        top: 25px
+        left: 427px
+        &:after
+          +transform(rotate(-20deg))
+          top: 38px
+          left: -7px
+          right: -10px
+      .about4
+        width: 90px
+        top: 80px
+        left: 510px
+        &:after
+          +transform(rotate(-20deg))
+          top: 44px
+          left: -7px
+          right: 5px
+
+
+
+
+
     .header_right
       +clr
       float: right
-      .video_tube
-        text-align: center
+      text-align: right
+      margin-top: 35px
+      h2
+        +arimob
+        font-size: 35px
+        color: #ffffff
+        text-align: right
+      h3
+        +arimo
+        color: #ffffff
+        font-size: 18px
+      .counter_under
         position: relative
-        width: 587px
-        height: 325px
-        .video_play
-          position: absolute
-          top: 0
-          left: 0
-          bottom: 0
-          right: 0
-          background: rgba(#000, 0.2)
-          &:hover
-            background: rgba(0,0,0,0)
-          &:after
-            position: absolute
-            top: 50%
-            left: 50%
-            content: ""
-            background: url(../img/play.png) no-repeat
-            width: 86px
-            height: 62px
-            margin-left: -45px
-            margin-top: -35px
+        background-color: rgb(71,71,71)
+        +border-radius(5px)
+        width: 312px
+        height: 145px
+        margin-top: 30px
+        margin-right: 20px
+        margin-bottom: 35px
+      .button__block
+        display: inline-block
+        margin-right: 12px
 
+    .header__items
+      +clr
+      clear: both
+      padding-top: 70px
 
-      .video_shadow
-        margin-top: -280px
+      ul
 
+        li
+          vertical-align: top
+          width: 290px
+          font-size: 14px
+          +arial
+          color: #4d4f4d
+          float: left
+          margin-right: 60px
+          &:last-child
+            margin-right: 0
 
+      .item__img
+        display: block
+        float: left
+        margin-right: 20px
 
 
 
