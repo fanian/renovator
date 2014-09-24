@@ -95,8 +95,9 @@ input, textarea
 
 .myFancyClose
   position: absolute
-  top: 14px
-  right: 14px
+  top: 7px
+  right: 8px
+  +s(close)
 
 .btn
   display: inline-block
@@ -180,17 +181,17 @@ input, textarea
   padding: 17px
   +border-radius(3px)
   float: left
-  input
-    border: 1px solid #fff
-    +box-shadow(inset 2px 4px 3px rgba(0,0,0,.22))
-    +border-radius(2px)
-    width: 280px
-    height: 35px
-    +box
-    padding-left: 12px
-    margin-right: 10px
-    &:last-child
-      margin-right: 0
+input
+  border: 1px solid #fff
+  +box-shadow(inset 2px 4px 3px rgba(0,0,0,.22))
+  +border-radius(2px)
+  width: 280px
+  height: 35px
+  +box
+  padding-left: 12px
+  margin-right: 10px
+  &:last-child
+    margin-right: 0
 .button__out
   position: relative
   height: 77px

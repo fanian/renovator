@@ -16,12 +16,12 @@
 
         <nav>
             <ul class="js-nav">
-                <li><a href="#">Об интернет-магазине</a></li>
-                <li><a href="#">О доставке</a></li>
-                <li><a href="#">Гарантии</a></li>
-                <li><a href="#">Вопросы и ответы</a></li>
-                <li><a href="#">Преимущества</a></li>
-                <li><a href="#">Купить</a></li>
+                <li><a data-scroll href="#about">Об интернет-магазине</a></li>
+                <li><a data-scroll href="#benefits">О доставке</a></li>
+                <li><a data-scroll href="#attention">Гарантии</a></li>
+                <li><a data-scroll href="#work">Вопросы и ответы</a></li>
+                <li><a data-scroll href="#questions">Преимущества</a></li>
+                <li><a data-scroll href="#bottom">Купить</a></li>
             </ul>
         </nav>
 
@@ -45,7 +45,7 @@
        </div>
      </div>
    </div>
-    <span id="first" class="section"></span><div class="header_main">
+    <div class="header_main" id="about">
         <div class="header_in">
             <h1 class="title">Высококачественный универсальный</h1>
             <h2>электроинструмент Superenovator</h2>
@@ -123,7 +123,7 @@
 
 <div class="page">
 
-<div class="attention">
+<div class="attention" id="attention">
     <div class="attention_in">
          <h2 class="title">Остерегайтесь дешёвых подделок,которые не проработают и месяца!</h2>
         <h3>Наш товар – сертифицирован и имеет гарантию!
@@ -252,7 +252,7 @@
     </div>
 </div>
 
-<div class="questions">
+<div class="questions" id="questions">
     <div class="questions_in">
         <h2 class="title">Остались вопросы?</h2>
         <h3>Посмотрите примеры использования инструмента Superenovator на видео</h3>
@@ -323,7 +323,7 @@
 </div>
 
 
-<div class="benefits">
+<div class="benefits" id="benefits">
     <div class="benefits_in">
         <div class="benefits-block">
              <div class="benefits__item">
@@ -354,7 +354,7 @@
         </div>
     </div>
 </div>
-<div class="work">
+<div class="work" id="work">
     <h2 class="title">как мы работаем<br /><span>о товаре Superenovator</span></h2>
 
     <div class="work_in">
@@ -380,8 +380,8 @@
 
 
 
-<div class="bottom">
-    <a href="#">
+<div class="bottom" id="bottom">
+    <a href="#buy" class="fancybox">
             <span class="button__out button__out--bottom">
                <span class="button button--bottom">Купить Superenovator Multi Tool</span>
             </span>
@@ -390,31 +390,65 @@
 </div>
 
 <footer>
+    <div class="footer_in">
+        <ul class="nav--footer">
+            <li><a data-scroll href="#about">Об интернет-магазине</a></li>
+            <li><a data-scroll href="#benefits">О доставке</a></li>
+            <li><a data-scroll href="#attention">Гарантии</a></li>
+            <li><a data-scroll href="#work">Вопросы и ответы</a></li>
+            <li><a data-scroll href="#questions">Преимущества</a></li>
+            <li><a data-scroll href="#bottom">Купить</a></li>
+            <li><a href="#">Политика конфиденциальности</a></li>
+
+        </ul>
+        <div class="footer__bottom">
+            <div class="footer__copy">
+                <p class="footer__font">Срочную доставку товара Инструмент
+                    Superenovator (Супереноватор) + насадки.
+                    Усовершенствованная версия Реноватора осуществляет
+                    <a href="#"><span>курьерская служба</span></a> TNX Express.</p>
+                <h4>©2014 Superenovator. Все права защищены.</h4>
+            </div>
+            <ul class="footer__inn">
+                    <li class="footer__font">ООО <span>“Курьер”</span></li>
+                    <li class="footer__font">ОГРН: <span>1137746208049</span></li>
+                    <li class="footer__font">ИНН: <span>7725785302</span></li>
+                    <li class="footer__font">КПП: <span>772501001</span></li>
+                    <li class="footer__font">ОКПО: <span>17277510</span></li>
+
+                </ul>
+            <div class="footer__contacts">
+                <div class="footer__address footer__font">115280, г.Москва, Автозаводская ул.,
+                    дом 17, корп.3, офис 11</div>
+                <a class="footer__mail footer__font" href="mailto:info@lidtech.ru">info@lidtech.ru</a>
+            </div>
+        </div>
+    </div>
 
 </footer>
 
 </div>
 </div>
 
-<div id = "thanks" class="thanks" style="display: none">
-    <h2>Спасибо, за вашу заявку!</h2>
-    <h3>Наши менеджеры связутся с вами в ближайшее время!</h3>
-    <div class="strakes">
-        <div class="strakes_in">
-            <div class="center"></div>
-        </div>
+<div id = "buy" class="buy-popup" style="display: none">
+    <div class="popup__top"><h2 class="title">купить</h2>
+        <h3>электроинструмент Superenovator</h3></div>
+
+    <div class="popup__form">
+        <form action="#" id="form1" method="post">
+            <input type="text" name="name" class="name required" placeholder="Имя:">
+            <input type="text" name="email" class="email required" placeholder="E-mail:">
+            <div class="button__out"><button class="button">купить инструмент</button></div>
+        </form>
+
+
     </div>
 </div>
 
-<a class="thanks-link fancybox" href="#thanks"></a>
 
 <!-- END out-->
 
-<script src="js/lib/jquery.js"></script>
-<script src="js/lib/jquery.form.js"></script>
-<script src="js/lib/jquery.fancybox.pack.js"></script>
-<script src="js/lib/jquery.validate.js"></script>
-<script src="js/common.js"></script>
+<script src="js/lib/head.js" data-headjs-load="js/init.js"></script>
 
 </body>
 </html>

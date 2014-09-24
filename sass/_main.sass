@@ -52,18 +52,17 @@
           line-height: 50px
           height: 50px
           padding: 0 33px
-        &.is-active
-          background: rgba(#000, .18)
-          color: #ffffff
-
-        &:hover
-          background: rgba(#000, .18)
-          color: #ffffff
-
-
-        a
           text-decoration: none
           color: inherit
+          &.is-active
+            background: rgba(#000, .18)
+            color: #ffffff
+
+          &:hover
+            background: rgba(#000, .18)
+            color: #ffffff
+
+
 
 header
   background: url(../img/header_bg.jpg) center no-repeat
@@ -720,32 +719,124 @@ header
 footer
   background: rgb(58,55,52)
   height: 209px
+  +box
+  .footer_in
+    @extend %in
+    +clr
+  .nav--footer
+    border-bottom: 1px dashed rgba(#fff, .4)
+    +clr
+    padding-top: 30px
+    padding-bottom: 20px
+    li
+      float: left
+      color: #f4ede7
+      text-transform: uppercase
+      margin-right: 22px
+      +arimo
+      font-size: 13px
+      a
+        text-decoration: none
+        color: inherit
+        &:hover
+          text-decoration: underline
+      &:last-child
+        margin-right: 0
+        color: #fbba2e
+  .footer__bottom
+    margin-top: 30px
+    .footer__font
+      color: #c9bdb3
+      +arial
+      font-size: 12px
+      text-align: left
 
-.thanks
-  box-sizing: border-box
-  position: relative
-  text-align: center
-  width: 690px
-  height: 275px
+  .footer__copy
+    float: left
+    width: 460px
+    span
+      color: #fbba2e
+      text-decoration: underline
+    h4
+      font-size: 11px
+      +arial
+      color: #8b7f74
+      margin-top: 15px
+
+
+  .footer__inn
+    margin-left: 50px
+    float: left
+    li
+      color: #ad9e91
+      span
+        color: #f4ede7
+
+  .footer__contacts
+    float: right
+    width: 240px
+    padding-right: 30px
+    .footer__address
+      position: relative
+      padding-left: 25px
+
+      &:before
+        position: absolute
+        content: ""
+        +s(pin_ico)
+        top: 3px
+        left: 0
+    .footer__mail
+      padding-left: 25px
+      color: #fbba2e
+      margin-top: 15px
+      position: relative
+      display: inline-block
+      &:before
+        position: absolute
+        content: ""
+        +s(message_ico)
+        top: 3px
+        left: 0
+
+
+
+.buy-popup
+  width: 517px
   background: #ffffff
-  +border-radius(5px)
-  padding-top: 55px
-  border-bottom: 7px solid rgb(79,47,19)
+  +border-radius(4px)
+  .popup__top
+    padding-top: 15px
+    background: url(../img/popup__top.png) repeat
+    height: 102px
+    +border-radius(3px 3px 0 0)
+    +box
   h2
-    font-size: 36px
-    color: #ab7807
-    +arimo
-    text-transform: uppercase
-    border-top: solid 1px rgb(244,237,231)
-    padding-top: 55px
-    margin-bottom: 15px
+    color: #fcc435
+    font-size: 35px
   h3
-    font-size: 19px
-    font-style: normal
-    color: #7a7066
+    color: #ffffff
+    text-align: center
+    text-transform: uppercase
     +osl
-  .strakes
-    .strakes_in
-      width: 500px
-    .center
-      left: 125px
+    font-size: 24px
+  .popup__form
+    background: rgb(255,252,248)
+    padding-top: 45px
+    padding-bottom: 30px
+    text-align: center
+    +box
+    input
+      border: 1px solid #ede1d2
+      background: #ffffff
+      display: inline-block
+      width: 370px
+      +box-shadow(none)
+      margin-bottom: 15px
+      margin-right: 0
+    .button__out
+      margin-top: 15px
+      display: inline-block
+      cursor: pointer
+      button
+        padding-top: 0

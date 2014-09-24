@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectTasksOptions">
     <TaskOptions isEnabled="true">
-      <option name="arguments" value="compile H:/proj/renovator $UnixSeparators($FilePath$)$" />
+      <option name="arguments" value="compile D:/proj/idea/renovator $UnixSeparators($FilePath$)$" />
       <option name="checkSyntaxErrors" value="false" />
       <option name="description" value="Compiles .sass files into .css files using compass" />
       <option name="exitCodeBehavior" value="ERROR" />
@@ -15,7 +15,7 @@
       </option>
       <option name="outputFromStdout" value="false" />
       <option name="passParentEnvs" value="true" />
-      <option name="program" value="$PROJECT_DIR$/../Ruby200/bin/compass.bat" />
+      <option name="program" value="C:/Ruby200/bin/compass.bat" />
       <option name="scopeName" value="Project Files" />
       <option name="trackOnlyRoot" value="true" />
       <option name="workingDir" value="$PROJECT_DIR$" />
